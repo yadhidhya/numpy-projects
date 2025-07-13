@@ -50,8 +50,11 @@ def read_csv(file):
             result.append(item_dict)
     return result
 
-with open('hello.txt') as file1:
+with open('filename.txt') as file1:  # use example_data.txt 
     print(file1.read())
-    data = read_csv('hello.txt')
+    data = read_csv('filename.txt')  # use example_data.txt
     for row in data:
         print(row)
+
+'''I've added a new file (example_data.txt) to the repository which contains csv data save the file 
+   in same folder and change the file name in the above code to access the file.'''
