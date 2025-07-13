@@ -1,6 +1,6 @@
-'''now we are going to download a csv file from the url, parsing header and each line seperately
+'''Using this code we are going to download a csv file from the url, parsing header and parsing each line seperately
 then we will create a list of dictionaries which contains headers as keys and csv data as values.
-all the values are converted into float values'''
+all the values are converted into float'''
 
 # before starting the process lets create a directory which contains csv files 
 
@@ -55,7 +55,9 @@ def read_csv(path):
 
 with open('./data/file1_name.txt') as file1:
     print(file1.read())
-    read_csv('./data/file1_name.txt')
+    data = read_csv('./data/file1_name.txt')
+    for row in data:
+        print(row)
 
     
             
